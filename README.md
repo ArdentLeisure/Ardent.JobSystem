@@ -1,4 +1,4 @@
-A Job based task library for running background integration jobs.
+A Programmable Task scheduler used for background integration.
 
 Used for background integration jobs for PurpleSmoke ([shop.dreamworld.com.au](http://shop.dreamworld.com.au))
 
