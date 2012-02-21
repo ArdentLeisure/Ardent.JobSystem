@@ -1,0 +1,31 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets"/>
+
+	<PropertyGroup>
+		<VersionMajor>0</VersionMajor>
+		<VersionMinor>1</VersionMinor>
+	</PropertyGroup>
+
+	<Target Name="Build">
+
+		<TfsVersion
+		  TfsLibraryLocation="C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0"
+		  LocalPath="$(MSBuildProjectDirectory)">
+		  <Output TaskParameter="Changeset" PropertyName="ChangesetNumber"/>
+		</TfsVersion>
+
+		<MSBuild
+            Projects="$(MSBuildProjectDirectory)\Ardent.JobSystem\Ardent.JobSystem.csproj"
+            Targets="Build"
+			Properties="Configuration=Debug;
+            OutDir=$(MSBuildProjectDirectory)\Ardent.JobSystem\Bin\Debug\;
+			ApplicationVersion=$(VersionMajor).$(VersionMinor).$(ChangesetNumber)" />
+
+    <!--NuGet stuff-->
+    <Message Text="C:\NuGet\NuGet.exe pack $(MSBuildProjectDirectory)\Ardent.JobSystem\Ardent.JobSystem.csproj -Version $(VersionMajor).$(VersionMinor).$(ChangesetNumber) -OutputDirectory \\grp-dev02\f$\Websites\Ardent.NuGet\Packages" />
+    
+    <Exec Command="C:\NuGet\NuGet.exe pack $(MSBuildProjectDirectory)\Ardent.JobSystem\Ardent.JobSystem.csproj -Version $(VersionMajor).$(VersionMinor).$(ChangesetNumber) -OutputDirectory \\grp-dev02\f$\Websites\Ardent.NuGet\Packages"></Exec>
+    
+	</Target>
+  
+</Project>

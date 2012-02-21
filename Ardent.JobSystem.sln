@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ardent.JobSystem", "Ardent.JobSystem\Ardent.JobSystem.csproj", "{423189CB-3087-4A04-B197-DA0B07134485}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8454A4EE-BE61-4324-A9FD-7AE48DC6A0E8}"
+	ProjectSection(SolutionItems) = preProject
+		Ardent.JobSystem.Build.proj = Ardent.JobSystem.Build.proj
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://mlol-dev01-srv:8080/tfs/ardentcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Ardent.JobSystem\\Ardent.JobSystem.csproj
+		SccProjectName1 = Ardent.JobSystem
+		SccLocalPath1 = Ardent.JobSystem
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{423189CB-3087-4A04-B197-DA0B07134485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{423189CB-3087-4A04-B197-DA0B07134485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{423189CB-3087-4A04-B197-DA0B07134485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{423189CB-3087-4A04-B197-DA0B07134485}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
