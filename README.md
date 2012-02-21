@@ -1,6 +1,6 @@
 A Job based task library for running background integration jobs.
 
-Used for background integration jobs for PurpleSmoke (shop.dreamworld.com.au)
+Used for background integration jobs for PurpleSmoke ([shop.dreamworld.com.au](http://shop.dreamworld.com.au))
 
 Example Usage:
 
